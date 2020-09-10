@@ -1,4 +1,4 @@
-#include "speed.h"
+#include "speed.hpp"
 
 speed::speed()
 {

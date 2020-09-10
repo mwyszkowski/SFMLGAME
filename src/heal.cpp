@@ -1,4 +1,4 @@
-#include "heal.h"
+#include "heal.hpp"
 
 heal::heal()
 {

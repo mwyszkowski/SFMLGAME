@@ -1,4 +1,4 @@
-#include "gameManager.h"
+#include "gameManager.hpp"
 #include <SFML/Graphics.hpp>
 Event evencik;
 

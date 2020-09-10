@@ -1,11 +1,11 @@
 #ifndef GAMEMANAGER_H
 #define GAMEMANAGER_H
-#include "player.h"
-#include "enemy.h"
-#include "pack.h"
-#include "heal.h"
-#include "maxheal.h"
-#include "speed.h"
+#include "player.hpp"
+#include "enemy.hpp"
+#include "pack.hpp"
+#include "heal.hpp"
+#include "maxheal.hpp"
+#include "speed.hpp"
 #include <vector>
 #include <sstream>
 #include <iomanip>

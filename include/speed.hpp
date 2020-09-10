@@ -1,15 +1,15 @@
-#ifndef MAXHEAL_H
-#define MAXHEAL_H
-#include "pack.h"
+#ifndef SPEED_H
+#define SPEED_H
+#include "pack.hpp"
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
-class maxheal : public pack
+class speed : public pack
 {
 private:
 
 public:
-    maxheal();
+    speed();
     Sprite getSprite();
     int addhp();
     int getxPosition();

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "gameManager.h"
-#include "player.h"
+#include "gameManager.hpp"
+#include "player.hpp"
 #include <ctime>
 #include <cstdlib>
 

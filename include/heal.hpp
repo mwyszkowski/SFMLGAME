@@ -1,15 +1,15 @@
-#ifndef ATTACK_H
-#define ATTACK_H
-#include "pack.h"
+#ifndef HEAL_H
+#define HEAL_H
+#include "pack.hpp"
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
-class attack : public pack
+class heal : public pack
 {
 private:
 
 public:
-    attack();
+    heal();
     Sprite getSprite();
     int addhp();
     int getxPosition();

@@ -1,4 +1,4 @@
-#include "maxheal.h"
+#include "maxheal.hpp"
 
 maxheal::maxheal()
 {

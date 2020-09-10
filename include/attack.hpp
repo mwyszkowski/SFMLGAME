@@ -1,15 +1,15 @@
-#ifndef SPEED_H
-#define SPEED_H
-#include "pack.h"
+#ifndef ATTACK_H
+#define ATTACK_H
+#include "pack.hpp"
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
-class speed : public pack
+class attack : public pack
 {
 private:
 
 public:
-    speed();
+    attack();
     Sprite getSprite();
     int addhp();
     int getxPosition();

@@ -1,7 +1,7 @@
-#ifndef HEAL_H
-#define HEAL_H
+#ifndef HEAL_HPP
+#define HEAL_HPP
 #include "pack.hpp"
-#include <SFML/Graphics.hpp>
+
 using namespace sf;
 
 class heal : public pack
@@ -16,4 +16,4 @@ public:
     int getyPosition();
 };
 
-#endif // HEAL_H
+#endif // HEAL_HPP

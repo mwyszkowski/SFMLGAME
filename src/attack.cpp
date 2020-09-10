@@ -1,5 +1,5 @@
 #include "attack.hpp"
-
+#include <SFML/Graphics.hpp>
 attack::attack()
 {
     m_Position.x=(rand()%1070)+180;

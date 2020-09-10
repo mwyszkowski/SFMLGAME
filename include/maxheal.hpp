@@ -1,7 +1,7 @@
-#ifndef MAXHEAL_H
-#define MAXHEAL_H
+#ifndef MAXHEAL_HPP
+#define MAXHEAL_HPP
 #include "pack.hpp"
-#include <SFML/Graphics.hpp>
+
 using namespace sf;
 
 class maxheal : public pack
@@ -16,4 +16,4 @@ public:
     int getyPosition();
 };
 
-#endif // HEAL_H
+#endif // HEAL_HPP

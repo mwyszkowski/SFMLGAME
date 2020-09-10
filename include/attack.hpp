@@ -1,7 +1,7 @@
-#ifndef ATTACK_H
-#define ATTACK_H
+#ifndef ATTACK_HPP
+#define ATTACK_HPP
 #include "pack.hpp"
-#include <SFML/Graphics.hpp>
+
 using namespace sf;
 
 class attack : public pack
@@ -16,4 +16,4 @@ public:
     int getyPosition();
 };
 
-#endif // HEAL_H
+#endif // HEAL_HPP

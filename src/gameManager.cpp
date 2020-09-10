@@ -1,5 +1,9 @@
 #include "gameManager.hpp"
 #include <SFML/Graphics.hpp>
+#include "heal.hpp"
+#include "maxheal.hpp"
+#include "speed.hpp"
+#include <iomanip>
 Event evencik;
 
 gameManager::gameManager()

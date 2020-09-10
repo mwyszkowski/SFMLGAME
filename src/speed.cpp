@@ -1,5 +1,5 @@
 #include "speed.hpp"
-
+#include <SFML/Graphics.hpp>
 speed::speed()
 {
     m_Position.x=(rand()%1070)+180;

@@ -1,14 +1,9 @@
-#ifndef GAMEMANAGER_H
-#define GAMEMANAGER_H
+#ifndef GAMEMANAGER_HPP
+#define GAMEMANAGER_HPP
 #include "player.hpp"
 #include "enemy.hpp"
 #include "pack.hpp"
-#include "heal.hpp"
-#include "maxheal.hpp"
-#include "speed.hpp"
-#include <vector>
 #include <sstream>
-#include <iomanip>
 using namespace sf;
 using namespace std;
 
@@ -50,4 +45,4 @@ public:
 protected:
 };
 
-#endif // GAMEMANAGER_H
+#endif // GAMEMANAGER_HPP

@@ -1,5 +1,5 @@
 #include "maxheal.hpp"
-
+#include <SFML/Graphics.hpp>
 maxheal::maxheal()
 {
     m_Position.x=(rand()%1070)+180;

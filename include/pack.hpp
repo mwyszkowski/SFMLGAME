@@ -1,5 +1,5 @@
-#ifndef PACK_H
-#define PACK_H
+#ifndef PACK_HPP
+#define PACK_HPP
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
@@ -19,4 +19,4 @@ public:
 
 };
 
-#endif // PACK_H
+#endif // PACK_HPP

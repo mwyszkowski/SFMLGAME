@@ -1,5 +1,5 @@
 #include "heal.hpp"
-
+#include <SFML/Graphics.hpp>
 heal::heal()
 {
     m_Position.x=(rand()%1070)+180;

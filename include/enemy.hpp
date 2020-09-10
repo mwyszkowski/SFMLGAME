@@ -1,5 +1,5 @@
-#ifndef ENEMY_H
-#define ENEMY_H
+#ifndef ENEMY_HPP
+#define ENEMY_HPP
 #include <SFML/Graphics.hpp>
 using namespace sf;
 
@@ -28,4 +28,4 @@ public:
 
 };
 
-#endif // ENEMY_H
+#endif // ENEMY_HPP

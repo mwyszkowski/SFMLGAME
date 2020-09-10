@@ -1,7 +1,7 @@
-#ifndef SPEED_H
-#define SPEED_H
+#ifndef SPEED_HPP
+#define SPEED_HPP
 #include "pack.hpp"
-#include <SFML/Graphics.hpp>
+
 using namespace sf;
 
 class speed : public pack
@@ -16,4 +16,4 @@ public:
     int getyPosition();
 };
 
-#endif // HEAL_H
+#endif // HEAL_HPP

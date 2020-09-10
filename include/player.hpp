@@ -1,5 +1,5 @@
-#ifndef PLAYER_H
-#define PLAYER_H
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
 #include <SFML/Graphics.hpp>
 
 using namespace sf;
@@ -44,4 +44,4 @@ public:
     void fight(float attack, float elapsedTime);
 };
 
-#endif // PLAYER_H
+#endif // PLAYER_HPP

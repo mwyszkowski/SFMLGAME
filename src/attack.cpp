@@ -7,7 +7,7 @@ attack::attack()
     m_Texture.loadFromFile("attack.png");
     m_Sprite.setTexture(m_Texture);
     m_Sprite.setPosition(m_Position);
-    m_Add=5;
+    m_Add=4;
 }
 
 

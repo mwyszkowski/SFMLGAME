@@ -16,4 +16,4 @@ public:
     int getyPosition();
 };
 
-#endif // HEAL_HPP
+#endif // ATTACK_HPP

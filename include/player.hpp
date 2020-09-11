@@ -41,6 +41,7 @@ public:
     void setMHealth(int sHealth);
     void setHealth(int sHealth);
     void setSpeed(int sHealth);
+    void setAttack(int sHealth);
     void fight(float attack, float elapsedTime);
 };
 

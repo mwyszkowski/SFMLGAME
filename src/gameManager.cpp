@@ -3,6 +3,7 @@
 #include "heal.hpp"
 #include "maxheal.hpp"
 #include "speed.hpp"
+#include "attack.hpp"
 #include <iomanip>
 Event evencik;
 
@@ -156,6 +157,7 @@ void gameManager::Generator()
     if (m_Round%3==0 && m_Round!=0 && m_Speed==false)
     {
         m_Pack.push_back (new speed);
+        m_Pack.push_back (new attack);
         m_Speed=true;
     }
     if (m_Round%5!=0)
@@ -218,6 +220,8 @@ void gameManager::fight(float dtAsSeconds)
             }
             else if (m_Pack[i]->addhp()==20)
                 m_Player.setMHealth(m_Pack[i]->addhp());
+            else if (m_Pack[i]->addhp()==4)
+                m_Player.setAttack(m_Pack[i]->addhp());
             delete m_Pack[i];
             m_Pack.erase(m_Pack.begin()+i);
         }

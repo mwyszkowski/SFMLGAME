@@ -37,6 +37,11 @@ void player::setSpeed (int sHealth)
     m_Speed=m_Speed+sHealth;
 }
 
+void player::setAttack (int sHealth)
+{
+    m_Attack=m_Attack+sHealth;
+}
+
 void player::setHealth(int sHealth)
 {
     if (m_Health+sHealth>=m_maxHealth)

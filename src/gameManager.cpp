@@ -12,6 +12,7 @@ gameManager::gameManager()
     resolution.x=1280;
     resolution.y=720;
     m_Window.create(VideoMode(resolution.x, resolution.y), "Game");
+    m_Window.setFramerateLimit(60);
     m_BackgroundTexture.loadFromFile("background.jpg");
     m_BackgroundSprite.setTexture(m_BackgroundTexture);
     font.loadFromFile("kidson.ttf");

@@ -7,7 +7,7 @@
 #include <iomanip>
 Event evencik;
 
-gameManager::gameManager()
+gameManager::gameManager() // set everything
 {
     Vector2f resolution;
     resolution.x=1280;
@@ -21,7 +21,7 @@ gameManager::gameManager()
     m_Hud.setString("");
     m_Hud.setCharacterSize(50);
     m_Hud.setFillColor(Color::White);
-    sGO << "    GAME OVER" << endl << "Press enter to restart";
+    sGO << "    GAME OVER" << endl << "Press enter to restart"; // text to be shown when game is over
     m_GO.setFont(font);
     m_GO.setString(sGO.str());
     m_GO.setCharacterSize(150);
@@ -31,7 +31,7 @@ gameManager::gameManager()
 
 
 
-void gameManager::input()
+void gameManager::input() // player character movement
 {
     if (Keyboard::isKeyPressed(Keyboard::Escape))
     {
@@ -92,7 +92,7 @@ void gameManager::input()
     }
 }
 
-void gameManager::update(float dtAsSeconds)
+void gameManager::update(float dtAsSeconds) // update positions 
 {
     m_Player.update(dtAsSeconds);
     for (int i=0; i<m_enemyAmount; i++)
@@ -102,7 +102,7 @@ void gameManager::update(float dtAsSeconds)
     hud();
 }
 
-void gameManager::draw()
+void gameManager::draw() // draw gui
 {
     m_Window.clear(Color::White);
     m_Window.draw(m_BackgroundSprite);
@@ -120,7 +120,7 @@ void gameManager::draw()
     m_Window.display();
 }
 
-void gameManager::Generator()
+void gameManager::Generator() // creating enemies and packs 
 {
     if (m_enemyAmount==0)
     {
@@ -174,7 +174,7 @@ void gameManager::Generator()
 
 
 
-void gameManager::fight(float dtAsSeconds)
+void gameManager::fight(float dtAsSeconds) // fighting - if player and enemy touch eachother then dmg is taken same mechanism for boost packs
 {
     for (int i=0; i<m_enemyAmount; i++)
     {
@@ -230,7 +230,7 @@ void gameManager::fight(float dtAsSeconds)
 
 }
 
-void gameManager::deleteenemy()
+void gameManager::deleteenemy() // delete enemy
 {
     for (int i=0; i<m_enemyAmount; i++)
     {
@@ -244,7 +244,7 @@ void gameManager::deleteenemy()
     }
 }
 
-void gameManager::hud()
+void gameManager::hud() // simple hud
 {
     output.str("");
     output.clear();
@@ -256,7 +256,7 @@ void gameManager::hud()
 }
 
 
-void gameManager::start()
+void gameManager::start() // loop of the game
 {
     Clock clock;
     while (m_Window.isOpen())

@@ -10,6 +10,6 @@ int main()
 {
     srand(time(0));
     gameManager engine;
-    engine.start();
+    engine.start(); // start game loop
     return 0;
 }
